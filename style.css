@@ -1,0 +1,1836 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',arial,sans-serif;
+    transition: all 0.25s linear;
+}
+
+.dark{
+    background-color: #202124;
+}
+
+.navbar1{
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid #0000001c;
+    z-index: 100;
+}
+#navbar{
+    width: 100%;
+    position: fixed;
+}
+
+.rLogin{
+    text-align: center;
+}
+.bulb{
+    width: 22vmin;
+    height: 22vmin;
+    margin-top: 17px;
+    margin-left: 22px;
+    opacity: 0.3;
+}
+
+.bulbImg{
+    height: 100%;
+    width: 100%;
+}
+
+.bulbDark{
+filter: invert(1);
+}
+
+.alert-Box{
+    position: absolute;
+    background-color: red;
+}
+
+.loginForm{
+    position: fixed;
+    min-height: 43vh;
+    width: 50vmin;
+    right: 32px;
+    top: 65px;
+    background-color: white;
+    box-shadow: 0px 0px 2px grey;
+    padding: 15px;
+    opacity: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.loginError{
+    padding: 1px 27px;
+    font-size: 14px;
+    color: #f30e0e;
+    text-align: center;
+    border-radius: 4px;
+}
+.loginSuccess{
+    padding: 1px 27px;
+    font-size: 14px;
+    color: rgb(12, 136, 12);
+    text-align: center;
+    border-radius: 4px;
+}
+
+
+.loginFormDark{
+    background-color: #313032;
+    color: white;
+}
+
+.uname{
+    margin: 0;
+    font-size: 15px;
+
+}
+.pass{
+    margin: 0;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+.u{
+    border: none;
+    outline: none;
+    font-size: 13px;
+    padding: 7px 10px;
+    margin: 6px 0px;
+    width: 100%;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.164);
+    }
+
+.loginElem{
+    margin: 10px 2px;
+}
+
+.loginbutton{
+    width: 100%;
+}
+
+.loginBtn{
+    width: 100%;
+    padding: 5px 0px;
+    margin-top: 12px;
+    border: none;
+    color: white;
+    background-color: #ffbb00;
+    cursor: pointer;
+}
+
+.loginBtn:hover{
+    background-color: #b2823b;
+}
+
+.signUp1{
+    color: red;
+    cursor: pointer;
+}
+.signUp1:hover{
+    text-decoration: underline;
+}
+#description{
+    border: none;
+    outline: none;
+}
+
+.lowerTxt{
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.signupForm{
+    position: fixed;
+    min-height: 43vh;
+    width: 50vmin;
+    right: 32px;
+    top: 65px;
+    background-color: white;
+    box-shadow: 0px 0px 2px grey;
+    padding: 15px;
+    opacity: 0;
+}
+
+.signupFormDark{
+    background-color: #313032;
+    color: white;
+}
+
+.uname1{
+    margin: 0;
+    font-size: 15px;
+}
+
+.email{
+    margin: 0;
+    font-size: 15px;
+}
+
+.pass1{
+    margin: 0;
+    font-size: 15px;
+
+}
+
+.confPass1{
+    margin: 0;
+    font-size: 15px;
+}
+
+.signupElem{
+    margin: 10px 0px;
+}
+
+.signupbutton{
+    width: 100%;
+}
+
+.signupBtn{
+    width: 100%;
+    padding: 5px 0px;
+    margin-top: 12px;
+    border: none;
+    color: white;
+    background-color: #ffbb00;
+    cursor: pointer;
+}
+
+.logoutForm{
+    position: fixed;
+    min-height: 20vh;
+        width: 50vmin;
+    right: 32px;
+    top: 65px;
+    background-color: white;
+    box-shadow: 0px 0px 2px grey;
+    padding: 15px;
+    opacity: 0;
+}
+
+.welcmTxt{
+    font-size: 19px;
+    text-align: center;
+}
+
+.logoutBtn{
+    width: 100%;
+    padding: 5px 0px;
+    margin-top: 12px;
+    border: none;
+    color: white;
+    background-color: #ffbb00;
+    cursor: pointer;
+   text-decoration: none;
+   text-align: center;
+}
+.logoutBtn:hover{
+   text-decoration: none;
+}
+.logoutFormDark{
+    background-color: #313032;
+    color: white;
+ }
+
+.left{
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.middle{
+    position: absolute;
+    left: 270px;
+}
+
+.right{
+    position: absolute;
+    right: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.login{
+    height: 38px;
+    width: 36px;
+    margin: 0px 18px;
+    cursor: pointer;
+}
+.login img{
+    height: 100%;
+    width: 100%;
+}
+.icon1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50%;
+    height: 39px;
+    width: 41px;
+}
+.icon1 img{
+    height: 100%;
+    width: 100%;
+}
+
+.icon1:hover{
+    background-color: aliceblue;
+}
+
+.icon1dark:hover{
+    background-color: rgb(31, 27, 27);
+}
+
+.logo{
+    height: 44px;
+    width: 27px;
+    padding-left: 3px;
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+
+.hamImg{
+    height: 20px;
+    width: 21px;
+    opacity: 0.7;
+}
+
+.hamImgDark{
+    filter: invert(1);
+}
+
+.item1{
+    margin: 0px 9px; 
+}
+
+.item{
+    margin: 0px 6px;
+}
+
+.text{
+    font-size: 24px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.text a{
+    text-decoration: none;
+    color: #918686;
+}
+.text a:hover{
+    text-decoration: none;
+    /* color: #1d1919; */
+}
+.searchbar{
+    display: flex;
+    width: 92vmin;
+    position: relative;
+}
+
+.search{
+   background-color: rgb(232 233 248);
+    width: 100%;
+    padding: 12px 42px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.search::placeholder{
+    color: rgb(49, 43, 43);
+}
+.search:hover{
+    background-color: white;
+    box-shadow: 0px 0px 4px #636167a3;
+    border: none;
+}
+
+.searchIcon{
+    height: 21px;
+    width: 21px;
+    opacity: 0.6;
+    display: none;
+}
+.searchIcon img{
+   height: 100%;
+   width: 100%;
+}
+.searchIconDark{
+    filter: invert(1);
+}
+.fas{
+    position: absolute;
+    opacity: 0.9;
+    top: 16px;
+    left: 7px;
+    padding: 0px 5px;
+}
+
+
+.leftBox{
+    position: fixed;
+    width: 50px;
+    top: 4.3rem;
+    padding-left: 5px;
+    left: 0;
+    z-index: 3;
+    height: 100%;
+    transition: width 0.15s ease-in-out;
+    background-color: white;
+}
+
+.navList{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+}
+
+
+li{
+    list-style: none;
+}
+.menu-item{
+    padding: 4px 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-item:hover{
+    background-color: rgba(122, 115, 115, 0.103);
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+}
+
+
+.main1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+}
+
+.menu-name{
+    margin: 0px 19px;
+    font-size: 16px;
+    opacity: 0;
+    width: 100%;
+    cursor: pointer;
+}
+.menu-name a{
+    text-decoration: none;
+    color: black;
+   display: block;
+   width: 100%;
+}
+.menu-name a:hover{
+    text-decoration: none;
+    color: #ffbb00;
+}
+
+.menu-name:hover{
+    letter-spacing: 2px;
+    transition: width 0.20s ease-in-out;
+}
+
+.menu-nameDark a{
+    color: white;
+ }
+
+
+
+.leftBoxDark{
+    color: white;
+    background-color: #202124;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    opacity: 0.9;
+    padding: 7.5px 14.5px;
+    font-size: 22px;
+}
+
+.activeIcon{
+    background-color: #ffa10063;
+}
+
+.iconDark{
+    filter: invert(1);
+}
+
+.menuImg{
+    height: 23px;
+    width: 23px;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.label1{
+    background-color: #534f4f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 50px;
+    height: 28px;
+    width: 55px;
+    margin-bottom: 0;
+    box-shadow: 0px 1px 1px #7f7878;
+    border: 1px solid #534f4f;
+    cursor: pointer;
+}
+
+.ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    top: 2px;
+    left: 1px;
+}
+.checkbox:checked + .label1 .ball{
+    transform: translateX(28px);
+}
+
+.darkMode{
+    background-color: black;
+    color: white;
+}
+
+.navbarDark{
+    border-bottom: 1px solid #6d6868;
+    background-color: #202124;
+    color: white;
+}
+
+.searchDark{
+    background-color: rgb(77 76 80);;
+}
+.searchDark::placeholder{
+   color: white;
+}
+
+.searchDark:hover{
+    background-color: white;
+    border: 1px solid #8a8787ad;
+}
+.searchDark:hover::placeholder{
+color: black;
+}
+.searchDark:hover .fas{
+    filter: invert(0);
+    }
+.rightBox{
+    padding-left: 10rem;
+    display: flex;
+    flex-direction: column;
+    padding: 13px 0px;
+    position: relative;
+    align-items: center;
+    margin-left: 67px;
+}
+
+.title1{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 11px;
+    font-size: 15px;
+    border-radius: 6px;
+}
+
+.title1Dark{
+    background-color: #202124;
+}
+
+.descriptionDark{
+    background-color: #202124;
+    color: white;
+}
+.id1::placeholder{
+    color: black;
+}
+.id2::placeholder{
+    color: white;
+}
+
+.entNote1{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 7px 8px;
+    font-size: 18px;
+}
+.nav-list2{
+    display: flex;
+}
+
+.noteIcon{
+    font-size: 23px
+}
+
+.noteItem{
+    margin: 5px 15px;
+}
+
+.smallBox{
+    margin-top: 31px;
+    border: 2px solid black;
+    width: 82vmin;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px #454949a3;
+    border: none;
+    margin-bottom: -25px;
+}
+.smallboxDark{
+    border: 1px solid #777575ad;
+    box-shadow: none;
+}
+.bigBox{
+    margin-top: 31px;
+    border: 2px solid black;
+    width: 82vmin;
+    position: relative;
+    min-height: 145px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px #454949a3;
+    border: none;
+    padding-left: 5px;
+    margin-bottom: -25px;
+    display: none;
+}
+.bigboxDark{
+    border: 1px solid #777575ad;
+    color: white;
+    box-shadow: none;
+}
+
+.card{
+    border: 2px solid black;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+padding-top: 18px;
+font-size: 15px;
+}
+
+.description{
+    padding: 15px 8px;
+    border: none;
+    outline: none;
+    width: 100%;
+    overflow-wrap: break-word;
+    height: 81px;
+    font-size: 14px;
+}
+
+.editingIcons1{
+    padding-bottom: 12px;
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+}
+
+.editingIcon{
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    bottom: 12px;
+    left: 6px;
+}
+
+.editingIcons1Dark{
+    filter: invert(1);
+}
+.bottom{
+    padding-top: 30px;
+    padding-left: 5px;
+}
+.colorPalette{
+    height: 59px;
+    width: 106px;
+    border: 2px solid rgb(185 182 182 / 39%);
+    position: absolute;
+    left: 127px;
+    bottom: 7px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.colorPaletteDark{
+    filter: invert(1);
+}
+
+.closebtn{
+    position: absolute;
+    right: 25px;
+    font-size: 15px;
+    bottom: 12px;
+    border: none;
+    opacity: 0.8;
+    background: none;
+    border-radius: 4px;
+    padding: 4px 17px;
+    color: black;
+}
+
+.closebtn:hover{
+    cursor: pointer;
+    background-color: #270a0a12;
+}
+.closebtnDark{
+    color: white;
+}
+.color{
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    /* border: 1px solid rgb(185, 182, 182); */
+    margin: 0px 4px;
+    cursor: pointer;
+}
+
+.color1{
+    background-color: #c385c3;
+    box-shadow: 0px 0px 1px #433636;
+}
+
+.color2{
+background-color: rgb(223, 112, 112);
+}
+.color3{
+background-color: #64e964;
+}
+.color4{
+background-color: aqua;
+}
+.color5{
+background-color: palevioletred;
+}
+.color6{
+background-color: rgb(224, 224, 67);
+}
+
+.notes{
+    margin-top: 52px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.editingIcons2{
+    opacity: 0;
+    position: absolute;
+    bottom: 12px;
+    right: 10px;
+}
+
+
+.check{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: -5px;
+}
+.checkLight{
+    opacity: 0;
+}
+
+.checkDark{
+   opacity: 0;
+   filter: invert(1);
+}
+
+.notecard{
+    position: relative;
+    min-height: 6rem;
+    margin: 12px 10px;
+    border-radius: 8px;
+    border: 1px solid #7679795e;
+    width: 15rem;
+}
+.rLogin1{
+    color: black;
+    font-size: 17px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+.rLogin1Dark{
+    color: white;
+}
+
+.notecard:hover{
+    box-shadow: 0px 1px 6px #454949a3;
+  transform: translate3d(0px, -1px, 0px);
+}
+.notecardDark{
+        border: 1px solid #bdb5b594;
+}
+.notecardDark:hover{
+    box-shadow: 0px 0px 6px #171a1a;
+}
+
+.notecardLight:hover .checkLight{
+   opacity: 1;
+}
+
+.notecardDark:hover .checkDark{
+    opacity: 1;
+}
+
+.notecardDark:hover .editingIcon{
+    filter: invert(1);
+}
+
+.notecard:hover .editingIcons2{
+    opacity: 1;
+}
+
+.card-title {
+    margin-bottom: 2rem;
+}
+.noteTitle{
+    margin-top: 16px;
+    color: black;
+}
+.noteDescription{
+    color: black;
+}
+.noteTitleDark{
+    color: white;
+}
+.noteDescriptionDark{
+    color: white;
+}
+
+.h5{
+    font-size: 1rem;
+}
+
+.editingIcon2{
+    height: 14px;
+    width: 14px;
+    margin: 0px 8px;
+}
+.editingIcon2Dark{
+   filter: invert(1);
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+#modalEdit{
+    background-color: #747167;
+}
+#modalHead{
+    color: white;
+}
+.editModalDark{
+background-color: rgb(39, 39, 39);
+}
+
+.titleEdit{
+    background-color: #d9d2d27a;
+    padding-top: 9px;
+    border-radius: 4px;
+}
+
+.titleDark{
+    background-color: #202124;
+    color: white;
+}
+.descriptionEdit{
+    margin-top: 16px;
+    background-color: #d9d2d27a;
+    border-radius: 4px;
+}
+.descriptionDark{
+    background-color: #202124;
+    color: white;
+}
+.con3{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.con3Dark{
+    background-color: #202124;
+    color: white;
+}
+
+.aHeading{
+    font-variant: small-caps;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 20px;
+    padding-top: 57px;
+}
+.aContent{
+    margin-top: 2.8rem;
+}
+.aContent1{
+    text-align: center;
+    background-color: #413d3d1f;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+}
+.aContent1Dark{
+    background-color: #6a66661f;
+    color: white;
+}
+.myImg{
+    height: 42vmin;
+    width: 42vmin;
+    margin-top: 1rem;
+    padding-top: 11px;
+}
+.myImg img{
+    height: 100%;
+    width: 100%;
+}
+#myImg{
+    border-radius: 50%;
+}
+.con2{
+    padding-top: 47px;
+    overflow-x: hidden;
+}
+
+.con2Dark{
+    background-color: #202124;
+    color: white;
+}
+
+.cHeading{
+    text-align: center;
+    font-size: 35px;
+    font-variant: small-caps;
+}
+.cText{
+    font-size: 17px;
+    text-align: center;
+    padding: 0px 14px;
+}
+.cSec1{
+    background-color: #ffbb00;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    /* box-shadow: 0px 2px 4px #aba962; */
+}
+.cSec1Dark{
+    background-color: #81610a;
+    /* box-shadow: 0px 2px 4px #161615; */
+}
+
+.cicon{
+    height: 19px;
+    width: 19px;
+    margin-right: 10px;
+}
+.cicon img{
+    height: 100%;
+    width: 100%;
+ }
+.ciconDark{
+    filter: invert(1);
+}
+.row{
+    padding: 4px 0px;
+}
+.cSec2left{
+    /* border: 2px solid red; */
+    padding: 16px 4rem;
+}
+.cInfo{
+    padding: 2.2rem 17px;
+    background-color: #312e2e24;
+}
+.cInfoDark{
+    background-color: #564c4c24;
+    /* color: white; */
+}
+.qMsg{
+    font-size: 23px;
+    padding-left: 11px;
+    /* font-variant: small-caps; */
+}
+.followSection{
+    margin-top: 1rem;
+}
+.follow{
+    font-variant: small-caps;
+    font-weight: 600;
+}
+.fList{
+    display: flex;
+}
+.followItem{
+   margin-right: 16px;
+    cursor: pointer;
+}
+.followImg{
+    height: 24px;
+    width: 24px;
+}
+.followImg:hover{
+    transform: translateX(5px);
+}
+.followImg img{
+    height: 100%;
+    width: 100%;
+}
+.cSec2right{
+    /* border: 2px solid black; */
+    padding: 10px;
+}
+.cItem{
+    display: flex;
+}
+.cI1{
+    margin-left: 8px;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+.cInput1{
+    font-variant: all-small-caps;
+    font-size: 17px;
+}
+.cBtn{
+    background-color: #ffbb00;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 5px 17px;
+}
+
+.cBtnDark{
+    background-color: #5e4708;
+    color: white;
+}
+
+.con4{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #adacac54;
+}
+.con4Dark{
+    background-color: #202124;
+}
+.con41{
+    width: 86vmin;
+    /* border: 2px solid black; */
+    min-height: 80vh;
+    padding: 19px 40px;
+    margin: 43px 0px;
+    box-shadow: 0px 0px 14px grey;
+    background-color: white;
+}
+.con41Dark{
+    /* background-color: #312f2f; */
+    background-color: #20212491;
+    box-shadow: none;
+    box-shadow: none;
+    border: 2px solid #858181;
+}
+.hLineDark{
+    border-top: 1px solid #e1cfcf47;
+}
+.fH{
+    text-align: center;
+}
+.fH1{
+    font-size: 29px;
+    font-weight: 600;
+    font-variant: petite-caps;
+}
+.fHDark{
+    color: #ddd0d0;
+}
+.fH3{
+    font-size: 18px;
+    margin-top: 29px;
+    font-weight: 600;
+}
+
+.star-widget{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 11px 0px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    direction: ltr;
+}
+.fa-star{
+  font-size: 26px;
+  margin-bottom: 0;
+}
+.star-widget input{
+    display: none;
+}
+
+.star-widget .far{
+    font-size: 40px;
+    color: #6d6767;
+    margin-right: 15px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.star-widget input:not(:checked)~label:hover,
+.star-widget input:not(:checked)~label:hover~label{
+    color: #fd4;
+}
+
+.star-widget input:checked~label{
+    color: #fd4;
+}
+.farDark{
+    color: white;
+}
+.feedbackF{
+    margin-top: 50px
+}
+.cred-main{
+    opacity: 0;
+}
+.I1{
+    background-color: white;
+}
+.l1Dark{
+    color: #ddd0d0;
+}
+.I1Dark{
+    background-color: #403e3e;
+    border: none;
+}
+.fBtn{
+    background-color: #ffbb00;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    font-variant: all-small-caps;
+    font-size: 19px;
+}
+.fBtn:hover{
+    background-color: #dda710;
+}
+
+.con4{
+    display: flex;
+    justify-content: center;
+    padding-top: 67px;
+}
+
+.sImage{
+    width: 60vmin;
+    height: 45vmin;
+}
+.con5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 14px;
+    min-height: 100vh;
+}
+.con5Dark{
+    background-color: #202124;
+    color: white;
+}
+.sHeading{
+    font-variant: small-caps;
+    font-weight: 600;
+    font-size: 27px;
+    padding-top: 50px;
+}
+.sImage{
+    margin-bottom: 36px;
+    width: 55vmin;
+    height: 33vmin;
+    cursor: pointer;
+}
+
+.sImage img{
+    width: 100%;
+    height: 100%;
+}
+.sContent{
+    text-align: center;
+    padding: 41px 20px;
+    background-color: #413d3d1f;
+    border-radius: 10px;
+}
+.sContentDark{
+    background-color: #6a66661f;
+}
+.sC1{
+    font-size: 16.2px;
+}
+.sC2{
+    color: #dda509;
+    font-size: 19px;
+    font-weight: bold;
+    font-stretch: extra-condensed;
+    font-family: sans-serif;
+}
+.sC3{
+    font-size: 17.2px;
+    font-weight: 600;
+}
+
+.sFollowImg{
+    width: 23px;
+    height: 23px;
+    margin: 0px 8px;
+}
+.sFollowImg:hover{
+    transform: translateX(4px);
+ }
+
+ #footer{
+     text-align: center;
+     margin-bottom: 0;
+ }
+.icon1{
+    cursor: pointer;
+}
+.item1:hover #leftBox{
+    display: none;
+}
+
+@media only screen and (max-width: 1006px){
+    .middle{
+        left: 197px;
+    }
+    .searchbar{
+        width: 83vmin;
+    }
+    .label1{
+        height: 26px;
+        width: 52px;
+    }
+    .ball{
+        height: 21px;
+        width: 21px;
+        left: 1px;
+        top: 2px;
+    }
+}
+
+  @media only screen and (max-width: 925px){
+      .login{
+        height: 36px;
+        width: 34px;
+        margin: 0px 15px;
+      }
+  }
+
+  @media only screen and (max-width: 886px){
+    .item1 {
+        margin: 0px 4px;
+    }
+    .middle{
+        left: 160px;
+    }
+    .notecard{
+        width: 13rem;
+    }
+    .label{
+        height: 26px;
+       width: 52px;
+    }
+    .label1{
+        height: 26px;
+       width: 52px;
+    }
+    .login{
+        margin: 0px 9px;
+    }
+    .logo {
+        height: 36px;
+        width: 22px;
+    }
+    .text{
+        font-size: 21px;
+    }
+    .searchbar {
+        width: 67vmin;
+    }
+    .smallBox{
+        width: 82vmin;
+    }
+    .bigBox{
+        width: 82vmin;
+    }
+    .cSec2left{
+        padding: 16px 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 750px){
+    .notecard {
+        width: 14rem;
+    }
+    .searchbar{
+        display: none;
+        z-index: 100;
+        position: fixed;
+        top: 0.3rem;
+        left: 0.3rem;
+    }
+    
+    .search {
+        padding: 10px 42px;
+    }
+
+    .searchIcon{
+       display: block;
+    }
+    
+    .login {
+        margin: 0px 16px;
+    }
+    .navbar{
+        height: 8vh;
+    }
+    .cHeading{
+        font-size: 32px;
+        margin-top: 22px;
+    }
+    .cSec1{
+        min-height: 40vh;
+        font-size: 16px;
+    }
+    .cSec2left {
+        padding: 16px 1rem;
+    }
+    .cI1 {
+        font-size: 14px;
+    }
+    .cicon {
+        height: 17px;
+        width: 16px;
+        margin-right: 6px;
+    }
+    .cicon img{
+       height: 100%;
+       width: 100%;
+    }
+    .cInput1 {
+        font-size: 16px;
+    }
+    .con5 {
+        padding: 17px 0px;
+    }
+    .sHeading {
+        font-size: 24px;
+    }
+    .sImage{
+        margin-bottom: 15px;
+    }
+    .sC1 {
+        font-size: 15.2px;
+    }
+    .sC2 {
+        font-size: 18px;
+    }
+    .sC3 {
+        font-size: 16.2px;
+    }
+    .sFollowImg {
+        width: 22px;
+        height: 22px;
+    }
+  }
+
+  @media only screen and (max-width: 659px){
+    .navList {
+        margin-top: -1px;
+    }
+    .smallBox {
+        margin-top: 23px;
+    }
+    .bigBox {
+        margin-top: 23px;
+    }
+  }
+
+
+  @media only screen and (max-width: 577px){
+    .fas {
+     top: 14px;
+    }
+    .icon1 {
+    height: 38px;
+    width: 39px;
+    }
+   .notecard{
+    width: 20rem;
+    min-height: 6.5rem;
+   }
+   .smallBox {
+    width: 69vmin;
+  }
+  .bigBox {
+    width: 69vmin;
+  }
+  .leftBox:hover{
+    width: 220px;
+  }
+  .menu-name{
+      font-size: 15px;
+  }
+.searchIcon{
+    height: 19px;
+   width: 19px;
+}
+.login{
+    height: 33px;
+    width: 30px;
+}
+.loginForm {
+    width: 59vmin;
+}
+.signupForm{
+    width: 59vmin;
+}
+.logoutForm {
+    width: 59vmin;
+}
+.colorPalette {
+    left: 59px;
+}
+.cSec1 {
+    min-height: 43vh;
+}
+.con41{
+    margin: 33px 0px;
+}
+.aContent{
+    margin-top: 2.4rem;
+}
+.aContent1{
+    padding: 2rem 2rem;;
+}
+}
+
+@media only screen and (max-width: 491px){
+    .smallBox {
+        margin-top: 21px;
+    }
+    .leftBox{
+        top: 3.3rem;
+    }
+    .bigBox{
+        margin-top: 21px;
+    }
+    .notecard {
+        width: 17rem;
+        min-height: 5.7rem;
+    }
+    .rLogin1 {
+        font-size: 17px;
+        margin-top: 5px;
+    }
+    .bulb {
+        width: 19vmin;
+        height: 19vmin;
+        margin-left: 42px;
+        }
+    .title1 {
+        padding: 9px 11px;
+        font-size: 13px;
+    }
+    
+    .navList {
+        margin-top: 7px;
+    }
+    .hamImg{
+        height: 18px;
+        width: 19px;
+    }
+    .logo {
+        height: 32px;
+        width: 22px;
+        margin: 0px 6px;
+    }
+    .searchbar {
+        width: 61vmin;
+    }
+    
+    .login{
+        height: 32px;
+        width: 30px;
+    }
+    .ball {
+        height: 18px;
+        width: 18px;
+        top: 1px;
+    }
+    .label1 {
+        height: 22px;
+        width: 43px;
+    }
+    .checkbox:checked + .label1 .ball {
+        transform: translateX(20px);
+    }
+
+    .menu-item{
+        margin: 0px 0px;
+        padding: 3px 5px;
+    }
+    .notes{
+        margin-top: 38px;
+    }
+    .loginBtn{
+        font-size: 15px;
+        padding: 4px 0px;
+    }
+    .signupBtn{
+        font-size: 15px;  
+        padding: 4px 0px;
+    }
+    .uname{
+        font-size: 14px;
+    }
+    .uname1{
+        font-size: 14px;
+    }
+    .email{
+        font-size: 14px;
+    }
+    .pass{
+        font-size: 14px;
+    }
+    .pass1{
+        font-size: 14px;
+    }
+    .confPass1{
+        font-size: 14px;
+    }
+    .lowerTxt{
+        display: flex;
+        flex-direction: column;
+    }
+    .fH1 {
+        font-size: 26px;
+    }
+    .fH2{
+        font-size: 15px;
+    }
+    .fH3{
+        font-size: 16px;
+    }
+    .star-widget .far{
+        font-size: 35px;
+        margin-right: 8px;
+    }
+    .feedbackF {
+        margin-top: 31px;
+    }
+    .l1{
+        width: 100%;
+        font-size: 15px;
+    }
+    .I1{
+        font-size: 14px;
+    }
+    .fBtn{
+        font-size: 17px;
+    }
+    .aContent {
+        margin-top: 1.8rem;
+    }
+    .myImg {
+        height: 46vmin;
+        width: 46vmin;
+    }
+    .aContent1 {
+        padding: 1.2rem 1.5rem;
+        font-size: 15px;
+    }
+    .cSec1 {
+        min-height: 45vh;
+    }
+    .con41 {
+        margin: 22px 0px;
+    }
+    .cHeading {
+        font-size: 26px;
+        margin-top: 14px;
+    }    
+    .cText{
+        font-size: 16px;
+    }
+    .myImg{
+        height: 45vmin;
+        width: 45vmin;
+    }
+    .editingIcon {
+        left: 3px;
+    }
+}
+
+@media only screen and (max-width: 385px){
+    .search {
+        padding: 8.5px 42px;
+    }
+   .title{
+       padding-top: 14px;
+   }
+    .notecard{
+        width: 15rem;
+    }
+    .leftBox{
+        width: 71px;
+    }
+    .leftBox:hover{
+        width: 250px;
+        z-index: 100;
+    }
+    .logo {
+        height: 30px;
+        width: 18px;
+    }
+    .hamImg {
+        height: 17px;
+        width: 17px;
+    }    
+    .smallBox {
+        margin-top: 18px;
+        width: 71vmin;
+    }
+    .bigBox{
+        margin-top: 18px;
+        width: 71vmin;
+    }
+    .check{
+        height: 18px;
+        width: 18px;
+    }
+    .text {
+        font-size: 18px;
+    }
+    .searchIcon {
+        height: 15px;
+        width: 15px;
+    }
+    .login {
+        height: 27px;
+        width: 25px;
+    }    
+    .label1 {
+        height: 20px;
+        width: 36px;
+    }
+    .navbar {
+        height: 7.5vh;
+    }
+    .ball {
+        height: 16px;
+        width: 16px;
+        top: 1.4px;
+        left: 1px;
+    }
+    .menuImg {
+        height: 20px;
+        width: 20px;
+    }
+    .menu-name{
+        font-size: 13px;
+    }
+   
+    .icon{
+        height: 40px;
+    }
+    .checkbox:checked + .label1 .ball {
+        transform: translateX(17px);
+    }
+    .rLogin1 {
+        font-size: 15px;
+    }
+    .title{
+        padding-top: 18px;
+        font-size: 14px;
+    }
+    .description{
+        font-size: 12px;
+    }
+    .editingIcon {
+        height: 14px;
+        width: 15px;
+        margin: 0px 7px;
+    }
+    .closebtn{
+        right: 8px;
+       font-size: 13px;
+    }
+    .tooltip-inner{
+        font-size: 11px;
+    }
+    .loginElem {
+        margin: 7px 2px;
+    }
+    .uname{
+        font-size: 13px;
+    }
+    .uname1{
+        font-size: 13px;
+    }
+    .u{
+        font-size: 12px;
+    }
+    .pass{
+        font-size: 13px;
+    }
+    .pass1{
+        font-size: 13px;
+    }
+    .email{
+        font-size: 13px;
+    }
+    .confPass1{
+        font-size: 13px;
+    }
+    
+    .lowerTxt{
+        margin-top: 13px;
+        font-size: 12px;
+    }
+    .loginForm{
+        padding: 11px;
+        width: 62vmin;
+    }
+    .signupForm{
+        padding: 11px;
+        width: 62vmin;
+    }
+    .logoutForm{
+        min-height: 19vh;
+        padding: 11px;
+        width: 62vmin;
+    }
+    .loginBtn{
+        margin-top: 5px;
+        font-size: 13px;
+        padding: 6px 0px;
+    }
+    .signupBtn{
+        margin-top: 5px;
+        font-size: 13px;
+        padding: 6px 0px;
+    }
+    .wlcmTxt{
+        font-size: 18px;
+    }
+    .logoutBtn{
+        margin-top: 5px;
+        font-size: 13px;
+        padding: 6px 0px;
+    }
+    .colorPalette {
+        left: 59px;
+    }
+    .cHeading {
+        font-size: 25px;
+        margin-top: 19px;
+    }
+    .cText{
+        font-size: 16px;
+    }
+    .followImg {
+        height: 22px;
+        width: 22px;
+    }
+    .con41{
+        margin: 22px 0px;
+    }
+    .myImg {
+        height: 48vmin;
+        width: 48vmin;
+    }
+    .aContent1{
+        font-size: 14px;
+    }
+    .fH1 {
+        font-size: 20px;
+    }
+    .fH2 {
+        font-size: 14px;
+    }
+    .fH3 {
+        font-size: 15px;
+    }
+    .star-widget label {
+        font-size: 29px;
+        margin-right: 9px;
+    }
+    .I1 {
+        font-size: 14px;
+    }
+    .fBtn {
+        font-size: 17px;
+    }
+    .sImage {
+        margin-bottom: 36px;
+        width: 68vmin;
+        height: 37vmin;
+    }
+    .sContent{
+        padding: 30px 20px;
+    }
+    .sC1 {
+        font-size: 14.2px;
+    }
+    .sC2 {
+        font-size: 17px;
+    }
+    .sC3 {
+        font-size: 15.2px;
+    }
+    .sFollowImg {
+        width: 21px;
+        height: 21px;
+    }
+}
