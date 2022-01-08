@@ -112,7 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                     <div class="bottom">
                         <div class="closebutton">
-                            <button type="submit" class="closebtn" data-toggle="tooltip" data-placement="bottom" title="Save and Close">Close</button>
+                            <button type="submit" class="closebtn closebtnDark" data-toggle="tooltip" data-placement="bottom" title="Save and Close">Close</button>
                         </div>
                     </div>
                 </form>
@@ -157,7 +157,7 @@ if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] == true) {
             <?php
             if (!$loggedin) {
                 echo '
-            <div class="loginForm" style="opacity:1; z-index:100;">
+            <div class="loginForm" style="opacity:1; z-index:300;">
                 <form action="" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="login" value="login">';
                 if ($nloggedin) {
@@ -165,7 +165,7 @@ if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] == true) {
             ?>
                     <script>
                         document.querySelector('.cred-main').style.opacity = '1';
-                        document.querySelector('.cred-main').style.zIndex = '100';
+                        document.querySelector('.cred-main').style.zIndex = '300';
                     </script>
                 <?php
                 }
@@ -196,7 +196,7 @@ if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] == true) {
                     <script>
                         document.querySelector(".signupForm").style.opacity = '1';
                         document.querySelector(".cred-main").style.opacity = '1';
-                        document.querySelector(".signupForm").style.zIndex = '100';
+                        document.querySelector(".signupForm").style.zIndex = '300';
                     </script>
             <?php
                     echo '<span class="loginError">' . $alertMsg . '</span>';
@@ -228,7 +228,7 @@ if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] == true) {
 
 
             if ($loggedin) {
-                echo '<div style="opacity:1; z-index:100;" class="logoutForm">
+                echo '<div style="opacity:1; z-index:300;" class="logoutForm">
             <form action="" method="POST">
              <input type="hidden" name="logout" value="logout">
                 <p class="welcmTxt">Welcome ' . $_SESSION['username'] . '</p>

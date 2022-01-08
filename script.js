@@ -12,49 +12,57 @@ document.querySelector('.searchIcon').addEventListener('click', function (e) {
     }
 })
 
-document.querySelector('.icon1').addEventListener('mouseover', function (e) {
+document.querySelector('.icon1').addEventListener('click', function (e) {
+    if(flag){
     document.querySelector('.leftBox').style.width = '280px';
     document.querySelector('.leftBox').style.zIndex = '100';
-    document.querySelector('.rightBox').style.zIndex = '3';
+    document.querySelector('.rightBox').style.zIndex = '-1';
     document.querySelector('.leftBox').style.boxShadow = '0px 15px 9px rgb(0 0 0 / 32%)';
     menuNames = document.querySelectorAll('.menu-name');
     for (i of menuNames) {
         i.style.opacity = '1';
     }
-});
-document.querySelector('.icon1').addEventListener('mouseleave', function (e) {
-    document.querySelector('.leftBox').style.width = '50px';
-    document.querySelector('.leftBox').style.zIndex = '3';
-    document.querySelector('.rightBox').style.zIndex = '100';
-    document.querySelector('.leftBox').style.boxShadow = 'none';
-    menuNames = document.querySelectorAll('.menu-name');
-    for (i of menuNames) {
-        i.style.opacity = '0';
+    flag=false;
     }
-});
 
-document.querySelector('.leftBox').addEventListener('mouseover', function (e) {
-    document.querySelector('.leftBox').style.width = '280px';
-    document.querySelector('.leftBox').style.zIndex = '100';
-    document.querySelector('.rightBox').style.zIndex = '3';
-    document.querySelector('.leftBox').style.boxShadow = '0px 15px 9px rgb(0 0 0 / 32%)';
-    menuNames = document.querySelectorAll('.menu-name');
-    for (i of menuNames) {
-        i.style.opacity = '1';
-    }
-});
-document.querySelector('.leftBox').addEventListener('mouseleave', function (e) {
-    document.querySelector('.leftBox').style.width = '50px';
-    document.querySelector('.leftBox').style.zIndex = '3';
-    document.querySelector('.rightBox').style.zIndex = '100';
-    document.querySelector('.leftBox').style.boxShadow = 'none';
-    menuNames = document.querySelectorAll('.menu-name');
-    for (i of menuNames) {
-        i.style.opacity = '0';
+    else{
+            document.querySelector('.leftBox').style.width = '50px';
+            document.querySelector('.leftBox').style.zIndex = '-1';
+            document.querySelector('.rightBox').style.zIndex = '100';
+            document.querySelector('.leftBox').style.boxShadow = 'none';
+            menuNames = document.querySelectorAll('.menu-name');
+            for (i of menuNames) {
+                i.style.opacity = '0';
+            }
+            flag=true;
     }
 });
 
 
+if (window.matchMedia('(min-width: 450px)').matches) {
+    document.querySelector('.leftBox').addEventListener('mouseover', function (e) {
+        document.querySelector('.leftBox').style.width = '280px';
+        document.querySelector('.leftBox').style.zIndex = '100';
+        document.querySelector('.rightBox').style.zIndex = '-1';
+        document.querySelector('.leftBox').style.boxShadow = '0px 15px 9px rgb(0 0 0 / 32%)';
+        menuNames = document.querySelectorAll('.menu-name');
+        for (i of menuNames) {
+            i.style.opacity = '1';
+        }
+    });
+    document.querySelector('.leftBox').addEventListener('mouseleave', function (e) {
+        document.querySelector('.leftBox').style.width = '50px';
+        document.querySelector('.leftBox').style.zIndex = '-1';
+        document.querySelector('.rightBox').style.zIndex = '100';
+        document.querySelector('.leftBox').style.boxShadow = 'none';
+        menuNames = document.querySelectorAll('.menu-name');
+        for (i of menuNames) {
+            i.style.opacity = '0';
+        }
+    });
+    }
+
+    
 document.querySelector('.login').addEventListener('click', function () {
     document.querySelector('.cred-main').style.opacity = '1';
 })
@@ -68,7 +76,7 @@ window.addEventListener('mouseup', (e) => {
 if (document.querySelector('.SignUp1') != undefined) {
     document.querySelector('.SignUp1').addEventListener('click', function () {
         document.querySelector('.signupForm').style.opacity = '1';
-        document.querySelector('.signupForm').style.zIndex = '100';
+        document.querySelector('.signupForm').style.zIndex = '302';
     })
 }
 
