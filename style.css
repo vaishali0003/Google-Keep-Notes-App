@@ -549,9 +549,7 @@ color: black;
 .searchDark:hover .fas{
     filter: invert(0);
 }
-
 .rightBox{
-    z-index: 100;
     padding-left: 10rem;
     display: flex;
     flex-direction: column;
@@ -559,6 +557,7 @@ color: black;
     position: relative;
     align-items: center;
     margin-left: 67px;
+    z-index: 100;
 }
 
 .title1{
@@ -855,7 +854,7 @@ background-color: rgb(224, 224, 67);
     color: white;
 }
 #modalEdit{
-    background-color: #747167;
+    background-color: #40403e;
 }
 #modalHead{
     color: white;
@@ -884,6 +883,7 @@ background-color: rgb(39, 39, 39);
     color: white;
 }
 .con3{
+    overflow: hidden;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -1417,7 +1417,7 @@ background-color: rgb(39, 39, 39);
   .bigBox {
     width: 69vmin;
   }
-
+  
   .menu-name{
       font-size: 15px;
   }
@@ -1476,7 +1476,7 @@ background-color: rgb(39, 39, 39);
     .bulb {
         width: 19vmin;
         height: 19vmin;
-        margin-left: 47px;
+        margin-left: 69px;
         }
     .title1 {
         padding: 9px 11px;
@@ -1518,7 +1518,7 @@ background-color: rgb(39, 39, 39);
 
     .menu-item{
         margin: 0px 0px;
-        padding: 3px 5px;
+        padding: 3px 0px;
     }
     .notes{
         margin-top: 38px;
@@ -1597,11 +1597,11 @@ background-color: rgb(39, 39, 39);
         margin: 22px 0px;
     }
     .cHeading {
-        font-size: 26px;
+        font-size: 22px;
         margin-top: 14px;
     }    
     .cText{
-        font-size: 16px;
+        font-size: 15px;
     }
     .myImg{
         height: 45vmin;
@@ -1622,13 +1622,7 @@ background-color: rgb(39, 39, 39);
     .notecard{
         width: 15rem;
     }
-    .leftBox{
-        width: 71px;
-    }
-    .leftBox:hover{
-        width: 250px;
-        z-index: 100;
-    }
+    
     .logo {
         height: 30px;
         width: 18px;

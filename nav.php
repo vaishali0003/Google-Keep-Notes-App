@@ -1,7 +1,7 @@
 <nav class="navbar navbar1" id="navbar">
             <div class="left">
                 <div class="icon1 item1">
-                    <img src="more (1).png" class="hamImg" alt="img">
+                    <img src="more _1_.png" class="hamImg" alt="img">
                 </div>
 
                 <div class="logo item">

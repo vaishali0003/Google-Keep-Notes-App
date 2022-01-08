@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $alertMsg = "Username taken";
             }
         } else {
-            $alertMsg = "Password and confirm password doesnt match";
+            $alertMsg = "Password and confirm password does not match";
         }
     } else if (isset($_POST['login'])) {
         $nloggedin = true;
@@ -105,14 +105,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </button>
             </div>
             <div class="modal-body">
-                <form action="/GoogleKeep/index.php" method="POST">
+                <form action="" method="POST">
                     <input type="hidden" name="snoEdit" id="snoEdit">
                     <input type="text" class="title entNote1 id1 titleEdit" id="titleEdit" name="titleEdit" placeholder="Edit title...">
                     <textarea class="description id1 descriptionEdit" id="descriptionEdit" name="descriptionEdit" cols="10" rows="10" placeholder="Edit description..."></textarea>
 
                     <div class="bottom">
                         <div class="closebutton">
-                            <button type="submit" class="closebtn closebtnDark" data-toggle="tooltip" data-placement="bottom" title="Save and Close">Close</button>
+                            <button type="submit" class="closebtn" data-toggle="tooltip" data-placement="bottom" title="Save and Close">Close</button>
                         </div>
                     </div>
                 </form>
@@ -138,7 +138,7 @@ if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] == true) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Google Keep</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -158,7 +158,7 @@ if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] == true) {
             if (!$loggedin) {
                 echo '
             <div class="loginForm" style="opacity:1; z-index:300;">
-                <form action="" method="POST" enctype="multipart/form-data">
+                <form action="" method="POST">
                     <input type="hidden" name="login" value="login">';
                 if ($nloggedin) {
                     echo '<span class="loginError">' . $alertMsg . '</span>';
@@ -254,25 +254,25 @@ if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] == true) {
                 <ul class="navList">
                     <li class="menu-item">
                         <div class="icon">
-                            <img src="home (2).png" class="menuImg" alt="img">
+                            <img src="home _2_.png" class="menuImg" alt="img">
                         </div>
                         <p class="menu-name"><a href="index.php">Home</a></p>
                     </li>
                     <li class="menu-item">
                         <div class="icon">
-                            <img src="user (1).png" class="menuImg" alt="img">
+                            <img src="user _1_.png" class="menuImg" alt="img">
                         </div>
                         <p class="menu-name"><a href="about.php">About</a></p>
                     </li>
                     <li class="menu-item">
                         <div class="icon">
-                            <img src="contact (1).png" class="menuImg" alt="img">
+                            <img src="contact _1_.png" class="menuImg" alt="img">
                         </div>
                         <p class="menu-name"><a href="contact.php">Contact</a></p>
                     </li>
                     <li class="menu-item">
                         <div class="icon">
-                            <img src="feedback (2).png" class="menuImg" alt="img">
+                            <img src="feedback _2_.png" class="menuImg" alt="img">
                         </div>
                         <p class="menu-name"><a href="feedback.php">Feedback</a></p>
                     </li>
@@ -292,7 +292,7 @@ if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] == true) {
                 </div>
 
                 <div class="bigBox">
-                    <form action="/GoogleKeep/index.php" method="POST">
+                    <form action="" method="POST">
                         <input type="hidden" name="snoCreate" id="snoCreate" value="snoCreate">
                         <input type="text" class="title entNote1 id1" name="title" placeholder="Title">
                         <textarea class="description id1" name="description" cols="10" rows="10" placeholder="Take a note..."></textarea>
@@ -361,7 +361,7 @@ if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] == true) {
                         echo '
                         <div class="rloginC">
                         <div class="rlogin">
-                        <p class="rLogin1">Please Login to start</p>
+                        <p class="rLogin1">Please Login to save notes</p>
                     </div>
                     <div class="bulb">
                 <img src="bulbbg.png" class="bulbImg">
