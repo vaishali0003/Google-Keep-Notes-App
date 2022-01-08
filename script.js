@@ -352,9 +352,9 @@ function darkMode1() {
         i.classList.remove('notecardLight');
         i.classList.toggle('notecardDark');
     }
-    if (document.getElementById('username1') != undefined) {
-        document.getElementById('username1').style.color = "white";
-    }
+    // if (document.getElementById('username1') != undefined) {
+    //     document.getElementById('username1').style.color = "white";
+    // }
     document.querySelector('.editingIcons1').classList.toggle('editingIcons1Dark');
     editingIcons = document.querySelectorAll('.editingIcon2');
     for (i of editingIcons) {
