@@ -141,6 +141,7 @@
       function lightMode(){
         document.querySelector('.navbar1').classList.remove('navbarDark');
           document.querySelector('.icon1').classList.remove('icon1Dark');
+         document.querySelector('.logo').classList.remove('logoDark');
           document.querySelector('.hamImg').classList.remove('hamImgDark');
           document.querySelector('.con2').classList.remove('con2Dark');
           document.querySelector('.cInfo').classList.remove('cInfoDark');
@@ -160,6 +161,7 @@
         function darkMode1(){
           document.querySelector('.navbar1').classList.toggle('navbarDark');
           document.querySelector('.icon1').classList.toggle('icon1Dark');
+          document.querySelector('.logo').classList.toggle('logoDark');
           document.querySelector('.hamImg').classList.toggle('hamImgDark');
           document.querySelector('.con2').classList.toggle('con2Dark');
           document.querySelector('.cInfo').classList.toggle('cInfoDark');

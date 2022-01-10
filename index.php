@@ -252,31 +252,31 @@ if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] == true) {
         <div class="main1">
             <div id="leftBox" class="leftBox">
                 <ul class="navList">
-                    <li class="menu-item">
+                    <li class="menu-item menu-item1">
                         <div class="icon">
                             <img src="home _2_.png" class="menuImg" alt="img">
                         </div>
                         <p class="menu-name"><a href="index.php">Home</a></p>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item menu-item1">
                         <div class="icon">
                             <img src="user _1_.png" class="menuImg" alt="img">
                         </div>
-                        <p class="menu-name"><a href="about.php">About</a></p>
+                        <p class="menu-name menu-item1"><a href="about.php">About</a></p>
                     </li>
                     <li class="menu-item">
                         <div class="icon">
                             <img src="contact _1_.png" class="menuImg" alt="img">
                         </div>
-                        <p class="menu-name"><a href="contact.php">Contact</a></p>
+                        <p class="menu-name menu-item1"><a href="contact.php">Contact</a></p>
                     </li>
                     <li class="menu-item">
                         <div class="icon">
                             <img src="feedback _2_.png" class="menuImg" alt="img">
                         </div>
-                        <p class="menu-name"><a href="feedback.php">Feedback</a></p>
+                        <p class="menu-name menu-item1"><a href="feedback.php">Feedback</a></p>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item menu-item1">
                         <div class="icon">
                             <img src="communication.png" class="menuImg" alt="img">
                         </div>

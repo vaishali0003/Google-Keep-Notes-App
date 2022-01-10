@@ -21,7 +21,7 @@
         <img src="me.jpeg" id="myImg" alt="" srcset="">
     </div>
     <div class="aContent col-9">
-        <p class="aContent1">My name is Vaishali Dwivedi and I'm a full stack Web Developer. I'm currently persuing Bachelor of Technology in Electronics and Communication Engineering (third year) from Indira Gandhi Engineering College (Sagar,Madhya Pradesh) and own a CGPA of 8.15. I am adequate in the prominent skills like HTML,CSS,JAVASCRIPT,PHP,BOOTSTRAP,C,C++,web hosting etc. I am both driven and self motivated,and I am contantly experimenting with new technologies. I am very passionate about Web Development and strive to better myself as a web developer.
+        <p class="aContent1">My name is Vaishali Dwivedi and I'm a full stack Web Developer. I'm currently persuing Bachelor of Technology in Electronics and Communication Engineering (third year) from Indira Gandhi Engineering College (Sagar,Madhya Pradesh) and own a CGPA of 8.15. I am adequate in the prominent skills like HTML, CSS, JAVASCRIPT, PHP, BOOTSTRAP, C, C++, web hosting etc. I am both driven and self motivated,and I am contantly experimenting with new technologies. I am very passionate about Web Development and strive to better myself as a web developer.
         </p>
     </div>
 </div>
@@ -52,7 +52,8 @@
     }
 
 function lightMode(){
-  document.querySelector('.navbar1').classList.remove('navbarDark');
+            document.querySelector('.navbar1').classList.remove('navbarDark');
+            document.querySelector('.logo').classList.remove('logoDark');
           document.querySelector('.hamImg').classList.remove('hamImgDark');
           document.querySelector('.con3').classList.remove('con3Dark');
           document.querySelector('.aContent1').classList.remove('aContent1Dark');
@@ -62,6 +63,7 @@ function lightMode(){
 function darkMode1(){
   checkbox.checked = true;
           document.querySelector('.navbar1').classList.toggle('navbarDark');
+          document.querySelector('.logo').classList.toggle('logoDark');
           document.querySelector('.hamImg').classList.toggle('hamImgDark');
           document.querySelector('.con3').classList.toggle('con3Dark');
           document.querySelector('.aContent1').classList.toggle('aContent1Dark');

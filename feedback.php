@@ -87,6 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       function lightMode(){
         document.querySelector('.navbar1').classList.remove('navbarDark');
           document.querySelector('.icon1').classList.remove('icon1Dark');
+            document.querySelector('.logo').classList.remove('logoDark');
           document.querySelector('.hamImg').classList.remove('hamImgDark');
           document.querySelector('.con4').classList.remove('con4Dark');
           document.querySelector('.con41').classList.remove('con41Dark');
@@ -113,6 +114,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       function darkMode1(){
         document.querySelector('.navbar1').classList.toggle('navbarDark');
           document.querySelector('.icon1').classList.toggle('icon1Dark');
+         document.querySelector('.logo').classList.toggle('logoDark');
           document.querySelector('.hamImg').classList.toggle('hamImgDark');
           document.querySelector('.con4').classList.toggle('con4Dark');
           document.querySelector('.con41').classList.toggle('con41Dark');

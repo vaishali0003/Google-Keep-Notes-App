@@ -39,11 +39,9 @@ document.querySelector('.icon1').addEventListener('click', function (e) {
 });
 
 
-
     document.querySelector('.leftBox').addEventListener('mouseover', function (e) {
         if (window.innerWidth>450) {
             document.querySelector('.leftBox').style.width = '280px';
-            // document.querySelector('.leftBox').style.zIndex = '100';
             document.querySelector('.rightBox').style.zIndex = '-1';
             document.querySelector('.leftBox').style.boxShadow = '0px 15px 9px rgb(0 0 0 / 32%)';
             menuNames = document.querySelectorAll('.menu-name');
@@ -55,7 +53,6 @@ document.querySelector('.icon1').addEventListener('click', function (e) {
     document.querySelector('.leftBox').addEventListener('mouseleave', function (e) {
         if (window.innerWidth>450) {
             document.querySelector('.leftBox').style.width = '50px';
-            // document.querySelector('.leftBox').style.zIndex = '-1';
             document.querySelector('.rightBox').style.zIndex = '100';
             document.querySelector('.leftBox').style.boxShadow = 'none';
             menuNames = document.querySelectorAll('.menu-name');
@@ -174,7 +171,7 @@ for (i of deletes) {
         sno = e.target.id;
         sno = e.target.id.substr(1,);
         if (confirm("Are you sure you want to delete this note?")) {
-            window.location = `/GoogleKeep/index.php?delete=${sno}`;
+            window.location = `index.php?delete=${sno}`;
         }
     })
 }
@@ -199,6 +196,7 @@ function changeDarkMode() {
 function lightMode() {
     document.body.classList.remove('dark');
     document.querySelector('.navbar').classList.remove('navbarDark');
+    document.querySelector('.logo').classList.remove('logoDark');
     document.querySelector('.hamImg').classList.remove('hamImgDark');
     if (document.querySelector('.rLogin1') != undefined) {
         document.querySelector('.rLogin1').classList.remove('rLogin1Dark');
@@ -289,6 +287,7 @@ function lightMode() {
 function darkMode1() {
     document.body.classList.toggle('dark');
     document.querySelector('.navbar').classList.toggle('navbarDark');
+    document.querySelector('.logo').classList.toggle('logoDark');
     document.querySelector('.hamImg').classList.toggle('hamImgDark');
     if (document.querySelector('.rLogin1') != undefined) {
         document.querySelector('.rLogin1').classList.toggle('rLogin1Dark');
@@ -352,9 +351,7 @@ function darkMode1() {
         i.classList.remove('notecardLight');
         i.classList.toggle('notecardDark');
     }
-    // if (document.getElementById('username1') != undefined) {
-    //     document.getElementById('username1').style.color = "white";
-    // }
+    
     document.querySelector('.editingIcons1').classList.toggle('editingIcons1Dark');
     editingIcons = document.querySelectorAll('.editingIcon2');
     for (i of editingIcons) {
